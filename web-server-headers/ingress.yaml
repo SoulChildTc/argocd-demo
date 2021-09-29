@@ -6,6 +6,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/service-upstream: "true"
     nginx.ingress.kubernetes.io/upstream-vhost: "web-server-headers.default.svc.cluster.local"
+    link.argocd.argoproj.io/external-link: "http://headers.t.cn:31083"
 spec:
   rules:
   - host: headers.t.cn
